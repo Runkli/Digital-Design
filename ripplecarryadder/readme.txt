@@ -1,0 +1,1 @@
+Takes 2 4-bit inputs and calculates the output

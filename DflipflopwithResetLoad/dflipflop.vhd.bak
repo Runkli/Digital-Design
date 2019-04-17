@@ -1,0 +1,16 @@
+library IEEE;
+use IEEE.std_logic_1164.ALL;
+entity dflipflop is
+port (D : in std_logic;
+	Clk : in std_logic;
+	Q : out std_logic);
+end dflipflop;
+architecture Behavioral of dflipflop is
+begin
+	process(Clk)
+	begin
+		if Clk’EVENT AND Clk = '1' then
+			Q <= D;
+		end if;
+	end process;
+end Behavioral;

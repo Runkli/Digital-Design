@@ -1,0 +1,17 @@
+entity add1bit is
+ Port ( cin : in STD_LOGIC;
+ a : in STD_LOGIC;
+ b : in STD_LOGIC;
+ cout : out STD_LOGIC;
+ sum : out STD_LOGIC);
+end add1bit;
+-- Architecture name is picked to indicate this is a behavioral
+model:
+architecture Behavior of add1bit is
+-- This is an internal signal, which does not go to any port:
+signal int_sum: STD_LOGIC_VECTOR(1 DOWNTO 0);
+begin
+int_sum <= ('0' & a) + b + cin;
+sum <= int_sum(0);
+cout <= int_sum(1);
+end Behavior;

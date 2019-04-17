@@ -1,0 +1,56 @@
+|hardlock
+output <= inst.DB_MAX_OUTPUT_PORT_TYPE
+d1 => dflipflop:dff1.D
+reset => dflipflop:dff1.rst
+reset => dflipflop:dff2.rst
+reset => dflipflop:dff3.rst
+reset => dflipflop:dff4.rst
+load => dflipflop:dff1.load
+load => dflipflop:dff2.load
+load => dflipflop:dff3.load
+load => dflipflop:dff4.load
+clk => dflipflop:dff1.Clk
+clk => dflipflop:dff2.Clk
+clk => dflipflop:dff3.Clk
+clk => dflipflop:dff4.Clk
+d2 => dflipflop:dff2.D
+d3 => dflipflop:dff3.D
+d4 => dflipflop:dff4.D
+
+
+|hardlock|dflipflop:dff1
+D => Q~reg0.DATAIN
+rst => Q~reg0.ACLR
+rst => process_0.IN0
+load => process_0.IN1
+Clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hardlock|dflipflop:dff2
+D => Q~reg0.DATAIN
+rst => Q~reg0.ACLR
+rst => process_0.IN0
+load => process_0.IN1
+Clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hardlock|dflipflop:dff3
+D => Q~reg0.DATAIN
+rst => Q~reg0.ACLR
+rst => process_0.IN0
+load => process_0.IN1
+Clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hardlock|dflipflop:dff4
+D => Q~reg0.DATAIN
+rst => Q~reg0.ACLR
+rst => process_0.IN0
+load => process_0.IN1
+Clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

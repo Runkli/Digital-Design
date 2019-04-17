@@ -1,0 +1,49 @@
+|ripplecarry
+cin => add1bit:stage0.cin
+x[0] => add1bit:stage0.a
+x[1] => add1bit:stage1.a
+x[2] => add1bit:stage2.a
+x[3] => add1bit:stage3.a
+y[0] => add1bit:stage0.b
+y[1] => add1bit:stage1.b
+y[2] => add1bit:stage2.b
+y[3] => add1bit:stage3.b
+s[0] <= add1bit:stage0.sum
+s[1] <= add1bit:stage1.sum
+s[2] <= add1bit:stage2.sum
+s[3] <= add1bit:stage3.sum
+cout <= add1bit:stage3.cout
+
+
+|ripplecarry|add1bit:stage0
+cin => Add1.IN4
+a => Add0.IN1
+b => Add0.IN2
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripplecarry|add1bit:stage1
+cin => Add1.IN4
+a => Add0.IN1
+b => Add0.IN2
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripplecarry|add1bit:stage2
+cin => Add1.IN4
+a => Add0.IN1
+b => Add0.IN2
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripplecarry|add1bit:stage3
+cin => Add1.IN4
+a => Add0.IN1
+b => Add0.IN2
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/ilknu/OneDrive/Desktop/Files/Quartus/Lab4/DflipflopwithResetLoad/dflipflop.vhd
+source_file = 1, C:/Users/ilknu/OneDrive/Desktop/Files/Quartus/Lab4/DflipflopwithResetLoad/dflipflopvwf.vwf
+source_file = 1, C:/Users/ilknu/OneDrive/Desktop/Files/Quartus/Lab4/DflipflopwithResetLoad/db/dflipflop.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = dflipflop
+instance = comp, \D~input , D~input, dflipflop, 1
+instance = comp, \Q~output , Q~output, dflipflop, 1
+instance = comp, \Clk~input , Clk~input, dflipflop, 1
+instance = comp, \load~input , load~input, dflipflop, 1
+instance = comp, \Q~0 , Q~0, dflipflop, 1
+instance = comp, \rst~input , rst~input, dflipflop, 1
+instance = comp, \Q~reg0 , Q~reg0, dflipflop, 1
